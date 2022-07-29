@@ -1,0 +1,5 @@
+
+resource_groups:
+  ngen_global_firewall:
+    name: ngen-connectivity-global-firewall
+    region_key: region1

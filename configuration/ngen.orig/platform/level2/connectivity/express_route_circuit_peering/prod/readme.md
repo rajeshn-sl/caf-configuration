@@ -1,0 +1,25 @@
+
+# Express Route Circuit Peerings for prod
+
+```bash
+# login a with a user member of the caf-platform-maintainers group
+rover login -t ngen.it
+
+cd /tf/caf/landingzones
+git fetch origin
+git checkout 2112.int
+
+rover \
+  --impersonate-sp-from-keyvault-url https://ngen-co.vault.azure.net/ \
+  -lz /tf/caf/landingzones/caf_solution \
+  -var-folder /tf/caf/configuration/ngen/platform/level2/connectivity/express_route_circuit_peering/prod \
+  -tfstate_subscription_id 57aa6402-87b9-48a3-8920-40ab37157498 \
+  -target_subscription faf9172c-904b-490b-9dff-42f5fe4f35cb \
+  -tfstate connectivity_express_route_peerings_prod.tfstate \
+  -env ngen \
+  -level level2 \
+  -p ${TF_DATA_DIR}/connectivity_express_route_peerings_prod.tfstate.tfplan \
+  -a plan
+
+```
+

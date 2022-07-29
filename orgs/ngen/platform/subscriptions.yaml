@@ -1,0 +1,16 @@
+platform_subscriptions:
+  management:
+    alias: "management"
+    name: "ngen-management"
+    # Do not set the subscription_id when using the automated subscripiton creation
+    # In that case delete the following attribute.
+    # When re-using an existing subscripiton, set the GUID of the subscripiton.
+    subscription_id: 78d52edf-7ebb-4929-b499-6122fa31f566
+  identity:
+    alias: "identity"
+    name: "ngen-identity"
+    subscription_id: be0c51ca-5776-4386-b228-c6421801eeea
+  connectivity:
+    alias: "connectivity"
+    name: "ngen-connectivity"
+    subscription_id: faf9172c-904b-490b-9dff-42f5fe4f35cb

@@ -1,0 +1,37 @@
+subscriptions:
+  launchpad:
+    resource_groups:
+      level0:
+        name: ngen-caf-level0
+        tags:
+          level: level0
+      level1:
+        name: ngen-caf-level1
+        tags:
+          level: level1
+      level2:
+        name: ngen-caf-level2
+        tags:
+          level: level2
+
+    storage_accounts:
+      level0:
+        name: ngenstatel0
+        resource_group_key: level0
+      level1:
+        name: ngenstatel1
+        resource_group_key: level1
+      level2:
+        name: ngenstatel2
+        resource_group_key: level2
+
+    keyvaults:
+      level0:
+        name: ngen-kv-l0
+        resource_group_key: level0
+      level1:
+        name: ngen-kv-l1
+        resource_group_key: level1
+      level2:
+        name: ngen-kv-l2
+        resource_group_key: level2
